@@ -10,4 +10,5 @@ sudo apt install git
 sudo apt install exa
 sudo apt install neofetch
 
-
+change greeting /etc/motd
+/etc/ssh/sshd_config
