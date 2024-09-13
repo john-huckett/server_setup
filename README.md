@@ -5,9 +5,7 @@ install git
 ```
 sudo apt install git
 ```
-
 clone repo
-
 ```
 git clone https://github.com/john-huckett/server_setup.git
 
@@ -19,4 +17,8 @@ cd server_setup
 make script executable
 ```
 chmod +x server_setup.sh
+```
+run script
+```
+./server_setup
 ```
