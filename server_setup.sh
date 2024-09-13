@@ -2,7 +2,7 @@
 
 user="jph"
 
-apt install neovim neofetch
+apt install neovim appache2 neofetch fzf
 
 apt update
 apt upgrade
