@@ -1,0 +1,12 @@
+$if bash
+    set show-mode-in-prompt on
+    set vi-cmd-mode-string "\1\e[1;32m\2"
+    set vi-ins-mode-string "\1\e[1;35m\2"
+    set colored-completion-prefix on
+    set completion-ignore-case on
+    set completion-map-case on
+    set colored-stats on
+    set show-all-if-ambiguous on
+    set keyseq-timeout 50
+$endif
+
