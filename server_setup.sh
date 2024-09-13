@@ -1,11 +1,12 @@
 #!/bin/bash
 
 user="jph"
-
-apt -y install neovim nginx neofetch fzf
+apps=""
 
 apt update
 apt upgrade
+
+apt -y install neovim nginx neofetch fzf
 
 cp motd /etc/motd
 # mv sshd_config /etc/ssh/sshd_config
