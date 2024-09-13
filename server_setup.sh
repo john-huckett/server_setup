@@ -1,21 +1,21 @@
 #!/bin/bash
 
 user="jph"
-apps=""
 
-apt update
-apt upgrade
+apt update && apt upgrade
 
-apt -y install neovim nginx neofetch fzf
+apt -y install git neovim neofetch fzf nginx &&
 
-cp motd /etc/motd
+# useradd -m "$user" &&
+# adduser "$user" sudo &&
+
+# passwd "$user" &&
+
+cp motd /etc/motd &&
 # mv sshd_config /etc/ssh/sshd_config
-cp .bashrc /home/"$user"
-cp .inputrc /home/"$user"
+cp .bashrc /home/"$user" &&
+cp .inputrc /home/"$user" &&
 cp .profile /home/"$user"
 
-useradd "$user"
-adduser "$user" sudo
-passwd "$user"
 
 
