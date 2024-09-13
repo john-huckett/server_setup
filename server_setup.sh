@@ -2,17 +2,19 @@
 
 user="jph"
 
-apt install neovim appache2 neofetch fzf
+apt -y install neovim nginx neofetch fzf
 
 apt update
 apt upgrade
-
-useradd "$user"
-adduser "$user" sudo
 
 cp motd /etc/motd
 # mv sshd_config /etc/ssh/sshd_config
 cp .bashrc /home/"$user"
 cp .inputrc /home/"$user"
 cp .profile /home/"$user"
+
+useradd "$user"
+adduser "$user" sudo
+passwd "$user"
+
 

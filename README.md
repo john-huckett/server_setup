@@ -1,14 +1,12 @@
 
 shh into server as root.
 install git
-
 ```
 sudo apt install git
 ```
 clone repo
 ```
 git clone https://github.com/john-huckett/server_setup.git
-
 ```
 cd into server_setup
 ```
@@ -21,4 +19,13 @@ chmod +x server_setup.sh
 run script
 ```
 ./server_setup
+```
+
+## Generate Public Key
+```
+ssh-keygen  ~.ssh/keyname
+```
+## Copy Key to Server
+```
+ssh-copy-id username@remote_host
 ```
